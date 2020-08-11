@@ -27,7 +27,7 @@ public class APITest {
 	public void deveAdicionarTarefaComSucesso() {
 		
 		RestAssured.given()
-		.body(" {\"task\":\"Teste via API\",\"dueDate\":\"2020-08-10\"}").contentType(ContentType.JSON)
+		.body(" {\"task\":\"Teste via API\",\"dueDate\":\"2030-08-10\"}").contentType(ContentType.JSON)
 		.when()
 			.post("/todo")
 		.then()
